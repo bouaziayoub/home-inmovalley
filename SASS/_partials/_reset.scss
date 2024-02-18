@@ -1,0 +1,144 @@
+@use "../_partials/variables" as v;
+
+/* We define the Custom Properties */
+:root {
+  /* Colors */
+  --black: #333333;
+  --white: #fff;
+
+  /* Typography */
+  --tipo-principal: "Montserrat", sans-serif;
+  --tipo-secundaria: sans-serif;
+}
+
+/* We reset the Margin and Paddings of all labels */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+*::before,
+*::after {
+  display: block;
+}
+
+/* We avoid problems with images */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+}
+
+/* We reset the links to function as boxes... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+/* ... except those found in paragraphs */
+p a {
+  display: inline;
+}
+
+/* We remove the points of the <li> */
+li {
+  list-style-type: none;
+}
+
+/* (Optional) We configure soft anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* We disable default styles of the main text labels */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* We avoid problems with the pseudoements of quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* We level types of typefaces and placement of forms */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  appearance: none;
+}
+
+/* We reset the tables */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* We avoid problems with SVG*/
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* We configure the typography for the entire website */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--white);
+  /* (Optional) */
+  hyphens: auto;
+  /* (Optional) */
+  font-smooth: always;
+  /* (Optional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Optional) */
+  -moz-osx-font-smoothing: grayscale;
+}

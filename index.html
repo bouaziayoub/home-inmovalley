@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- My javascript -->
+    <script defer type="text/javascript" src="./js/index.js"></script>
+
+    <!-- font-family: Caveat,cursive -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat"
+      rel="stylesheet"
+    />
+
+    <!-- AWSOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="icon" href="./assets/icon_2.svg" />
+    <link rel="stylesheet" href="./SASS/styles.css" />
+    <title>Inicio | InmoValley</title>
+  </head>
+  <body>
+    <!-- Hearder -->
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="side1 col-4">
+            <div>
+              <div class="info-contact">
+                <a href="#">966 274 206</a>
+              </div>
+              <ul class="nav-menu list-inline">
+                <li class="list-inline-item">
+                  <a href="#">INICIO</a>
+                </li>
+                <li class="nav-item dropdown list-inline-item">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Propiedades
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Ver todo las propiedades</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Alquiler a largo plazo</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Nueva construcción</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Venta</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Vender</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+            <a href="#" class="logo">
+              <img
+                src="./assets/logo_header.svg"
+                alt="InmoValley Inmobiliaria"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="side2 col-4">
+            <div class="hide d-inline-block detail">
+              <a href="#" class="info-contact">info@inmovalley.com</a>
+            </div>
+
+            <div class="d-inline-block">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="languageDropdown"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img src="./assets/esFlag.svg" alt="Flag 2" />
+                </button>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <a class="dropdown-item" href="#">
+                    <img src="./assets/eng_flag.svg" alt="" />
+                    English
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <img src="./assets/frenchflag.svg" alt="Flag 1" />
+                    Français
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hide facebook d-inline-block">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+
+            <nav class="hide">
+              <ul class="list-inline d-inline">
+                <li class="no-hover list-inline-item">
+                  <a href="#" class="d-flex align-items-center">
+                    <img src="./assets/icon_heart_fill.svg" alt="Favoritos" />
+                    <span class="num-favorites ms-2">(2)</span>
+                  </a>
+                </li>
+
+                <li class="hide list-inline-item">
+                  <a href="#">Contactar</a>
+                </li>
+                <li class="hide menu list-inline-item">
+                  <a
+                    class="d-inline-flex align-items-center"
+                    href="#"
+                    id="modal"
+                  >
+                    <img src="./assets/menu.svg" alt="Menu" class="me-2" />
+                    Menú
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- MEEUN WHEN IT RESPONSIVE -->
+            <div class="respo-menu">
+              <div class="menu-button">
+                <button id="menu-toggle">&#9776;</button>
+              </div>
+              <ul class="nav-menu sidr-class-list-inline">
+                <li class="sidr-class-list-inline-item sidr-class-active">
+                  <a class="" href="/">Inicio</a>
+                </li>
+
+                <li class="sidr-class-list-inline-item sidr-class-hide-header">
+                  <a href="/sobre-nosotros/">Empresa</a>
+                </li>
+
+                <li
+                  class="sidr-class-dropdown sidr-class-hide-burger sidr-class-list-inline-item"
+                >
+                  <a
+                    href="/propiedades/"
+                    class="sidr-class-dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    id="sidr-id-dropdownMenuLink1"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Propiedades</a
+                  >
+                  <ul
+                    class="sidr-class-dropdown-menu sidr-class-animated sidr-class-fadeIn"
+                    aria-labelledby="dropdownMenuLink1"
+                  >
+                    <li class="sidr-class-dropdown-item">
+                      <a href="/propiedades/">Ver todas las propiedades</a>
+                    </li>
+                    <li class="sidr-class-dropdown-item">
+                      <a href="/propiedades-alquiler-a-largo-plazo/"
+                        >Alquiler a largo plazo</a
+                      >
+                    </li>
+                    <li class="sidr-class-dropdown-item">
+                      <a href="/propiedades-nueva-construccion/"
+                        >Nueva construcción
+                      </a>
+                    </li>
+                    <li class="sidr-class-dropdown-item">
+                      <a href="/propiedades-venta/">Venta</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="sidr-class-list-inline-item sidr-class-hide-header sidr-class-hide-footer"
+                >
+                  <a href="/propiedades/">Propiedades</a>
+                </li>
+
+                <li class="sidr-class-list-inline-item sidr-class-hide-header">
+                  <a href="/servicios/">Servicios</a>
+                </li>
+
+                <li class="sidr-class-list-inline-item">
+                  <a href="/vender-su-propiedad/">Vender</a>
+                </li>
+
+                <li class="sidr-class-list-inline-item sidr-class-hide-header">
+                  <a href="/noticias/">Blog</a>
+                </li>
+
+                <li class="sidr-class-list-inline-item sidr-class-hide-header">
+                  <a href="/contacto/">Contactar</a>
+                </li>
+
+                <li
+                  class="heart sidr-class-list-inline-item sidr-class-hide-header"
+                >
+                  <a href="/favoritos/"
+                    ><span class="sidr-class-favor"></span>
+                    <img src="./assets/icon_heart_fill.svg" alt="Favoritos" />
+                    <span id="sidr-id-budget-fav"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="miModal" class="modal miModal">
+              <div class="modal-content">
+                <div class="close">
+                  <img
+                    src="./assets/icon-close-modal-menu.svg"
+                    alt="close modal"
+                  />
+                  <span>Cerrar</span>
+                </div>
+                <div class="nav">
+                  <nav>
+                    <ul>
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Empresa</a></li>
+                      <li><a href="#">Propiedades</a></li>
+                      <li><a href="#">Servicios</a></li>
+                      <li><a href="#">Vender</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contactar</a></li>
+                      <li>
+                        <a href="#">
+                          <img src="./assets/icon_heart_fill.svg" alt="heart" />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="contact">
+                  <ul>
+                    <li><a href="">966 274 206</a></li>
+                    <li><a href=""> INFO@INMOVALLEY.COM </a></li>
+                    <li><a href=""> FACEBOOK</a></li>
+                  </ul>
+                </div>
+                <div class="lang">
+                  <img src="./assets/esFlag.svg" alt="es" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button valora fix -->
+    <div class="fix-btn-valora">
+      <a href="#">Valora tu propiedad</a>
+    </div>
+
+    <!-- Whatssap icon -->
+    <!-- <div class="fix-wsp-icon">
+      <img src="./assets/icon-whatsp-property.svg" alt="wsp" />
+    </div> -->
+
+    <!-- Container -->
+    <div class="custom">
+      <img class="img-slider" src="./assets/slider.jpg" alt="slider" />
+      <div class="text">
+        <div class="left-animation">
+          <span class="inmo">INMO</span> <br />
+          <span class="v">V</span>
+          <span class="alley">ALLEY</span>
+        </div>
+        <span class="side-animation">Siempre a tu lado</span>
+      </div>
+
+      <span class="move-down">
+        <img src="./assets/Icon feather-arrow-down-circle.svg" alt="" />
+      </span>
+
+      <!-- SEARCH -->
+      <div class="rectangle-dark search">
+        <div class="container">
+          <form class="row g-0">
+            <div class="col-md-4">
+              <select id="inputEstado" class="form-select">
+                <option selected>Estado</option>
+                <option>Nueca construcción</option>
+                <option>Alquiler a largo plazo</option>
+                <option>Venta</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select id="inputTipo" class="form-select">
+                <option selected>Tipo</option>
+                <option>Abosado</option>
+                <option>Casa</option>
+                <option>Atico</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select id="inputPublacion" class="form-select">
+                <option selected>Publacion</option>
+                <option>Barcelona</option>
+                <option>Madrid</option>
+                <option>Valencia</option>
+                <option>Girona</option>
+                <option>Alicante</option>
+                <option>Almeria</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select id="inputZona" class="form-select">
+                <option selected>Zona</option>
+                <option>Altabix</option>
+                <option>ALMORADI</option>
+                <option>Asilo - Pisos Azules</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select id="inputPrecio" class="form-select">
+                <option selected>Precio hasta</option>
+                <option>2000€</option>
+                <option>5000€</option>
+                <option>9000€</option>
+                <option>10000€</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputReferencia"
+                placeholder="Referencia"
+              />
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <button type="submit" class="btn btn-primary">
+                <img
+                  src="./assets/search.svg"
+                  alt="search"
+                  class="small-image"
+                />
+                Buscar
+              </button>
+            </div>
+          </form>
+          <div class="extra-btns row mt-2">
+            <div class="col-md-8 d-flex">
+              <button type="button" class="btn1 btn-secondary">
+                <img src="./assets/eraser.svg" alt="Limpiar" class="btn-img" />
+                Limpiar Filtros
+              </button>
+              <button type="button" class="btn2 btn-secondary">
+                <img
+                  src="./assets/advanced search.svg"
+                  alt="Búsqueda Avanzada"
+                  class="btn-img"
+                />
+                Búsqueda Avanzada
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elige tu futuro -->
+      <div class="choose-future">
+        <div class="img-choose-future">
+          <img src="./assets/image_banner.jpg" alt="image banner" />
+        </div>
+        <p>Elige tu futuro</p>
+        <img class="icon-v" src="./assets/icon logo.svg" alt="" />
+
+        <div class="cards row">
+          <div class="col-sm-4">
+            <div class="card">
+              <!-- Upper left square -->
+              <div class="square top-left"></div>
+              <!-- Left lower square -->
+              <div class="square bottom-left"></div>
+              <div class="card-body">
+                <img src="./assets/arrow-right.svg" alt="arrow" />
+
+                <h5 class="card-title">Special title treatment</h5>
+                <h6 class="card-text">20 <span>PROPIEDADES</span></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <!-- Upper left square -->
+              <div class="square top-left"></div>
+              <!-- Left lower square -->
+              <div class="square bottom-left"></div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <h6 class="card-text">43 <span>PROPIEDADES</span></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <!-- Upper left square -->
+              <div class="square top-left"></div>
+              <!-- Left lower square -->
+              <div class="square bottom-left"></div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <h6 class="card-text">36 <span>PROPIEDADES</span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TODO: EVERY HOVER OF EACH CARD """" THERE IS A PIC **** -->
+
+      <!-- PROPIEDAD -->
+      <div class="rectangle-dark propiedad">
+        <div class="property-title">
+          <h1>
+            PROPIEDAD
+            <span>Del mes</span>
+          </h1>
+        </div>
+      </div>
+
+      <!-- image_background Prop -->
+      <div class="property-container">
+        <!-- prop info -->
+        <!-- TODO: I NEED TO ADD THE HEART -->
+        <div class="property-info">
+          <div class="property-image">
+            <img src="./assets/property_1.jpg" alt="Imagen de la propiedad" />
+          </div>
+          <div class="property-details">
+            <div class="head">
+              <p class="ref">REF: CH-235</p>
+              <img src="./assets/icon_heart_fill.svg" alt="heart" />
+            </div>
+            <div class="body">
+              <h2>Chalet</h2>
+              <h3>Venta</h3>
+              <p>Elche · Torreta - Portalada</p>
+              <p>
+                <strong>320 </strong> m2 · <strong>297 </strong> m2·
+                <strong>5 </strong> Habitaciones· <strong>3</strong>Baños ·
+                <strong>Piscina</strong>
+              </p>
+              <p class="price">494.900 €</p>
+            </div>
+          </div>
+        </div>
+        <!-- sell property -->
+        <div class="sell-property">
+          <div class="sell-Left">
+            <div class="logo">
+              <img src="./assets/icon_2.svg" alt="logo" />
+            </div>
+            <h1>
+              VENDE TU PROPIEDAD
+              <span>Con Nosotros</span>
+            </h1>
+            <button type="button" class="">Quiero vender</button> 
+          </div>
+
+          <div class="sell-Reghit">
+            <img src="./assets/image_sell.jpg" alt="logo" />
+          </div>
+        </div>
+      </div>
+      <!-- PROPERTIE Featured -->
+      <div class="properties-featured">
+        <div class="prop-featured-title">
+          <h1>PROPIEDADES <span>Destacadas</span></h1>
+        </div>
+        <div class="prop-featured-info">
+          <div class="container mt-5">
+            <!-- First row card (above) -->
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="column col-md-6">
+                <div class="card mb-4">
+                  <img
+                    src="./assets/property_1.jpg"
+                    class="card-img-top"
+                    alt="Imagen de la propiedad"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Piso en Venta</h5>
+                    <p class="card-text">ELCHE · ASILO - PISOS AZULES</p>
+                    <p class="card-text">115 m2 · 3 Habitaciones · 2 Baños</p>
+                    <p class="card-text">140.000 €</p>
+                    <!-- 115 m2 · 3 Hab · 2 Baños -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="column col-md-6">
+                <div class="card mb-4">
+                  <img
+                    src="./assets/property_2.jpg"
+                    class="card-img-top"
+                    alt="Imagen de la propiedad"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Piso en Venta</h5>
+                    <p class="card-text">ELCHE · ASILO - PISOS AZULES</p>
+                    <p class="card-text">115 m2 · 3 Habitaciones · 2 Baños</p>
+                    <p class="card-text">140.000 €</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second row of cards (below) -->
+            <div class="row">
+              <!-- Card 3 -->
+              <div class="column col-md-6">
+                <div class="card mb-4">
+                  <img
+                    src="./assets/property_3.jpg"
+                    class="card-img-top"
+                    alt="Imagen de la propiedad"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Piso en Venta</h5>
+                    <p class="card-text">ELCHE · ASILO - PISOS AZULES</p>
+                    <p class="card-text">115 m2 · 3 Habitaciones · 2 Baños</p>
+                    <p class="card-text">140.000 €</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="column col-md-6">
+                <div class="card mb-4">
+                  <img
+                    src="./assets/property_4.jpg"
+                    class="card-img-top"
+                    alt="Imagen de la propiedad"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Piso en Venta</h5>
+                    <p class="card-text">ELCHE · ASILO - PISOS AZULES</p>
+                    <p class="card-text">115 m2 · 3 Habitaciones · 2 Baños</p>
+                    <p class="card-text">140.000 €</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  Button all prop -->
+          <div class="btn-all-prop">
+            <a href="#all-prop">
+              <span
+                >Ver todas las <br />
+                propiedades</span
+              >
+              <img
+                src="./assets/Icon feather-plus-circle.svg"
+                alt="see all prop"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Welcome & description -->
+      <div class="description-inmovalley">
+        <div class="row">
+          <div class="img1 column col-md-5">
+            <!-- Columna 1: Contiene una imagen -->
+            <img
+              src="./assets/home-text-img-01.jpg"
+              alt="Imagen"
+              class="img-fluid"
+            />
+          </div>
+          <div class="column col-md-5 text-left">
+            <!-- Columna 2: Contiene un icono pequeño y dos textos separados -->
+            <img src="./assets/icon_2.svg" alt="Foto" class="img-icon" />
+
+            <p class="text1">
+              BIENVENIDO A NUESTRA INMOBILIARIA. INMOVALLEY FUE FUNDADA EN ELCHE
+              EN EL AÑO 2005, DEDICADA A LA INTERMEDIACIÓN INMOBILIARIA,
+              CONTANDO SUS COMPONENTES CON MÁS DE VEINTE AÑOS DE EXPERIENCIA EN
+              EL SECTOR INMOBILIARIO.
+            </p>
+            <p class="text2">
+              Desde su apertura, con una primera oficina en la C/ Filet de Fora
+              en Elche (Alicante), la empresa se ha volcado en la gestión de
+              compraventas y arrendamientos de inmuebles en Elche y sus
+              alrededores. En estos años, la confianza de nuestros clientes así
+              como la profesionalidad de nuestros asesores ha ido creciendo
+              constantemente.
+            </p>
+            <button class="btn">Màs sobre nosotros</button>
+          </div>
+          <div class="img2 column col-md-5">
+            <!-- Columna 3: Contiene una foto -->
+            <img
+              src="./assets/home-text-img-02.jpg"
+              alt="Foto"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Last News -->
+      <div class="last-news">
+        <div class="container">
+          <div class="row">
+            <!-- Column 1: Town Title -->
+            <div class="col1 col-2">
+              <div class="rotate-text">
+                ÚLTIMAS <span>Noticias</span
+                ><img
+                  src="./assets/Icon feather-plus-2-circle.svg"
+                  alt="see more"
+                />
+              </div>
+            </div>
+            <!-- Column 2: Image 1-->
+            <div class="col2 col-4">
+              <div class="new1">
+                <p>27 JUN</p>
+                <p>
+                  2 CLAVES FUNDAMENTALES PARA VENDER UNA PROPIEDAD SIN USAR
+                  PORTALES INMOBILIARIOS.
+                </p>
+              </div>
+              <div class="img-container">
+                <img
+                  src="./assets/mews_1.jpg"
+                  class="img-fluid"
+                  alt="Imagen 1"
+                />
+                <div class="overlay1"></div>
+                <div class="overlay2"></div>
+                <img
+                  class="arrow-right"
+                  src="./assets/arrow-right.svg"
+                  alt="arrow right"
+                />
+              </div>
+            </div>
+            <!-- Column 3: Image 2 -->
+            <div class="col3 col-4">
+              <div class="new1">
+                <p>20 JUN</p>
+                <p>CÓMO HACER QUE UNA CASA SEA MÁS LUMINOSA</p>
+              </div>
+              <div class="img-container">
+                <img
+                  src="./assets/news_2.jpg"
+                  class="img-fluid"
+                  alt="Imagen 2"
+                />
+                <div class="overlay1"></div>
+                <div class="overlay2"></div>
+                <img
+                  class="arrow-right"
+                  src="./assets/arrow-right.svg"
+                  alt="arrow right"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FINAL BG -->
+
+      <div class="final-backgound">
+        <img src="./assets/final_background.jpg" alt="final-backgound" />
+      </div>
+
+      <!-- CONTACT US -->
+
+      <div class="contact-container">
+        <div class="contact-title">
+          <h1>CONTACTA<span>Con</span>NOSOTROS</h1>
+        </div>
+        <form class="form-contact m-auto">
+          <!-- Name input -->
+          <div class="input form-outline mb-4">
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="TU NOMBRE*"
+            />
+          </div>
+          <div class="row">
+            <!-- Phone input -->
+            <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  placeholder="TU TELÉFONO
+                  "
+                />
+              </div>
+            </div>
+            <!-- Email input -->
+            <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="TU EMAIL*"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="MENSAJE*"
+            ></textarea>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="chekBox"
+              checked
+            />
+            <label class="form-check-label" for="chekBox">
+              <a href="">
+                MARQUE LA CASILLA PARA CONTACTARNOS Y ACEPTE QUE SU INFORMACIÓN
+                SE USE DE ACUERDO CON NUESTRA
+                <span>POLÍTICA DE PRIVACIDAD </span> QUE SE AGREGARÁ
+                AUTOMÁTICAMENTE A NUESTRA LISTA DE CORREO, PERO PUEDE CANCELARLA
+                EN CUALQUIER MOMENTO*
+              </a>
+            </label>
+          </div>
+
+          <!-- Submit button -->
+          <div class="btn-contact text-center">
+            <button type="submit" class="btn mb-4">Send</button>
+          </div>
+          <p>
+            Responsable del tratamiento: Valley Agentes Asociados SL, Finalidad
+            del tratamiento: Gestión y control de los servicios ofrecidos a
+            través de la página Web de Servicios inmobiliarios, Envío de
+            información a traves de newsletter y otros, Legitimación: Por
+            consentimiento, Destinatarios: No se cederan los datos, salvo para
+            elaborar contabilidad, Derechos de las personas interesadas:
+            Acceder, rectificar y suprimir los datos, solicitar la portabilidad
+            de los mismos, oponerse altratamiento y solicitar la limitación de
+            éste, Procedencia de los datos: El Propio interesado, Información
+            Adicional: Puede consultarse la información adicional y detallada
+            sobre protección de datos Aquí.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <!-- Footer Container -->
+      <div class="footer__container">
+        <div class="footer__container__image">
+          <img src="./assets/logo_header.svg" alt="footer-image" />
+        </div>
+
+        <div>
+          <p><a href="#">966 274 206</a></p>
+          <p><a href="#">info@inmovalley.com</a></p>
+
+          <ul class="nav-menu">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Propiedades</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contactar</a></li>
+            <li><img src="./assets/icon_heart_fill.svg" alt="heart" /></li>
+          </ul>
+        </div>
+
+        <div class="d-inline-block">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="languageDwnFooter"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="./assets/esFlag.svg" alt="Flag 2" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="#">
+                <img src="./assets/eng_flag.svg" alt="" />
+
+                English
+              </a>
+              <a class="dropdown-item" href="#">
+                <img src="./assets/frenchflag.svg" alt="Flag 1" />
+                Français
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="facebook d-inline-block">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </div>
+
+      <!-- Footer legal -->
+      <div class="footer__legal">
+        <ul class="footer__legal__policies">
+          <li>© 2023 INMOVALLEY ·</li>
+          <li><a href="#">Nota legal</a></li>
+          <li>●</li>
+          <li>
+            <a href="#">Privacidad</a>
+          </li>
+          <li>●</li>
+          <li><a href="#">cookies</a></li>
+          <li>●</li>
+          <li><a href="#">Mapa Web</a></li>
+        </ul>
+        <ul class="footer__design">
+          <li class="footer__legal__policies__design">
+            Diseño: <span><a href="">A.Bouazi</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

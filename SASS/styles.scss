@@ -1,0 +1,10 @@
+@use "../SASS/_partials/variables" as v;
+@import "../SASS/_partials/reset", "../SASS/_partials/mixins",
+  "../SASS/_components/header", "../SASS/_components/main",
+  "../SASS/_components/footer", "../SASS/_components/modal";
+
+body {
+  background-color: v.$bg-color-primary;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}

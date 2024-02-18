@@ -1,0 +1,49 @@
+@mixin flex($direction, $flow, $justify-content, $text-align){
+    display: flex;
+    flex-flow: $direction $flow ;
+    justify-content: $justify-content;
+    align-items:$text-align;
+}
+
+@mixin section($direction: column){
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto;
+    color: v.$white-transparent;
+}
+
+@mixin transition($value: 0.3s){
+    transition: all $value ease-in-out;
+    -webkit-transition: all $value ease-in-out;
+    -moz-transition: all $value ease-in-out;
+    -ms-transition: all $value ease-in-out;
+    -o-transition: all $value ease-in-out;
+    -webkit-transition: all $value ease-in-out;
+}
+
+@mixin transform($scale){
+    transform: scale($scale);
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+}
+
+@mixin border-radius($value){
+    border-radius: $value;
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+}
+
+@mixin background-hero($url){
+    background-image: linear-gradient(to bottom,
+    v.$darker-transparent,
+    v.$darker-transparent ),
+  url($url);
+}
